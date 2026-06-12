@@ -1,0 +1,16 @@
+{
+  "name": "signal",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Signal — a SETI incremental: listen to cosmic static, decode an alien message, then negotiate first contact.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}
