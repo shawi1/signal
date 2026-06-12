@@ -600,13 +600,11 @@ function flushEvents(): void {
   }
 }
 
-let toastTimers: number[] = [];
 function toast(text: string, dur = 3500): void {
   const host = $("#toasts");
   const t = el("div", "toast", text);
   host.appendChild(t);
-  const id = window.setTimeout(() => { t.remove(); }, dur);
-  toastTimers.push(id);
+  window.setTimeout(() => { t.remove(); }, dur);
   while (host.childElementCount > 5) host.firstElementChild?.remove();
 }
 
